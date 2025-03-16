@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Sign Up</title>
+    <script defer src="hackathon.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fafafa;
+        }
+        .signup-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+            height: 620px;
+        }
+        .signup-container img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .signup-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .input-box {
+            width: 330px;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .signup-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .signup-btn:hover {
+            background-color: #007acc;
+        }
+
+      .insult {
+        color:red;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+      }
+
+      .or-divider {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .or-divider::before,
+        .or-divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #dbdbdb;
+            margin: 0 10px;
+        }
+        .fb-signup {
+            width: 100%;
+            padding: 8px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fb-signup img {
+            width: 18px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+        <h2>Instagram</h2>
+        <input type="text" class="input-box" id="FirstName" placeholder="First Name" required>
+        <input type="text" class="input-box" id="LastName" placeholder="Last Name" required>
+        <input type="email" class="input-box" id="EmailAddress" placeholder="Email Address" required>
+        <input type="password" class="input-box" id="Password" placeholder="Password" required> <!-- Fixed ID -->
+        <button class="signup-btn" id="signup-btn">Sign Up</button>
+        <div class="or-divider">OR</div>
+        <p class="login-link">Have an account? <a href="Screenshot 2025-03-16 171532.jpeg" class="link">Log in</a></p>
+        <p class="insult" id="insultMessage"></p>
+    </div>
+</body>
+
